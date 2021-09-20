@@ -1,0 +1,41 @@
+import random
+name = 'Holt'
+question = 'Is white a good colour to play?'
+answer = ''
+random_number = random.randint(1, 12)
+
+if random_number == 1:
+  answer = 'God No'
+elif random_number == 2:
+  answer = 'Not if you want to win'
+elif random_number == 3:
+  answer = "Remember that time a judge rewound all your opponent's mistakes? What colour were you playing then?"
+elif random_number == 4:
+  answer = 'Have they printed any good white cards recently?'
+elif random_number == 5:
+  answer = 'Is Gideon in standard?'
+elif random_number == 6:
+  answer = 'Why are you asking me questions you already know the answer to?'
+elif random_number == 7:
+  answer = "I miss Thraben Inspector as well, but it's time to move on"
+elif random_number == 8:
+  answer = 'Are you banned from playing green somehow?'
+elif random_number == 9:
+  answer = 'Why are you doing this to yourself and more importantly me?'
+elif random_number == 10:
+  answer = 'Just play a good deck Holt'
+elif random_number == 11:
+  answer = 'Only with Blue'
+elif random_number == 12:
+  answer = 'Maybe stay home this weekend'
+else:
+   answer = 'Error'
+
+if name == "":
+  print("Question: " + question)
+else:
+  print(name + ' asks: ' + question)
+if question == '':
+  print("That's not how this works")
+else:
+  print("Magic 8-Ball's answer: " + answer)
